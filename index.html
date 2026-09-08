@@ -146,7 +146,7 @@
     flex:none; overflow:hidden;
   }
   .avatar img{width:100%; height:100%; object-fit:cover; display:block;}
-  .about-text p{color:var(--text-soft); max-width:70ch; margin:0 0 14px;}
+  .about-text p{color:var(--text-soft); max-width:75ch; margin:0 0 16px;}
   .about-text p:last-child{margin-bottom:0;}
 
   /* ---------- Skills ---------- */
@@ -226,15 +226,6 @@
   .art-grid{width:100%; height:100%; background-image:linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size:20px 20px;}
   .art svg{position:relative; z-index:1;}
 
-  /* ---------- Education ---------- */
-  .edu-card{
-    background:var(--card); border:1px solid var(--border); border-radius:16px;
-    padding:28px 30px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; align-items:baseline;
-  }
-  .edu-card .school{font-family:'Sora', sans-serif; font-weight:700; font-size:18px; margin-bottom:6px;}
-  .edu-card .detail{color:var(--text-soft); font-size:14.5px;}
-  .edu-card .when{font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--teal); white-space:nowrap;}
-
   /* ---------- Contact ---------- */
   .contact-card{
     background:linear-gradient(135deg, rgba(45,212,191,.10), rgba(167,139,250,.10));
@@ -276,10 +267,9 @@
     <div class="logo grad-text">DA</div>
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -309,9 +299,106 @@
     <div class="about-grid">
       <div class="avatar" id="avatar">DA</div>
       <div class="about-text">
-        <p>I'm a computer science student at the Open University of Israel, working toward a B.Sc. with a 92 GPA. I like working close to the metal as much as I like building full-stack products — from a two-pass assembler written in C to a Dockerized trading simulator running on AWS.</p>
-        <p>Outside coursework, I spent two years on the software team of a FIRST Robotics Competition team, and completed a selective research program at the Hebrew University of Jerusalem simulating chaotic quantum systems.</p>
+        <p>Hi, I am a final year Computer Science student at The Open University of Israel with a GPA of 92. I combine solid academic foundations with practical experience in full stack development, Python physics modeling, and robotics.</p>
+        <p>I enjoy taking abstract ideas and turning them into working software applications. Whether I am building web platforms or working alongside teammates to write software for a robotics team, I focus on clear communication and effective collaboration.</p>
+        <p>I am looking for a Student Software Engineer or Python Developer position where I can contribute to projects, collaborate with experienced engineers, and continue to grow technically.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section-pad" style="background:var(--bg-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Experience</div>
+      <h2>Where I've worked &amp; collaborated</h2>
+    </div>
+    <div class="exp-card">
+      <div class="exp-top">
+        <span class="exp-org">FIRST Robotics Competition — High School Team Excalibur</span>
+        <span class="exp-dates">2022 – 2024</span>
+      </div>
+      <p class="exp-role">High School Extracurricular Robotics Team · Software Team Member (Java, Git)</p>
+      <ul class="bullets">
+        <li>Developed code as part of a 12-person software team within a 40-member high school robotics group spanning software, mechanical, and hardware.</li>
+        <li>Wrote Java to control the robot, implementing motor control and image recognition systems.</li>
+        <li>Took part in Git code reviews, reading teammates' code to catch bugs and keep the codebase stable ahead of competitions.</li>
+        <li>Explained software constraints to the hardware team to keep the code aligned with the physical robot design.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Projects</div>
+      <h2>A few things I've built</h2>
+      <p>Selected work spanning full-stack apps, systems programming, and research.</p>
+    </div>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="art">
+          <div class="art-grid" style="position:absolute; inset:0;"></div>
+          <svg width="150" height="90" viewBox="0 0 150 90" fill="none">
+            <polyline points="4,70 24,55 44,60 64,32 84,40 104,16 124,26 146,8" stroke="#2DD4BF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="146" cy="8" r="4" fill="#2DD4BF"/>
+            <rect x="4" y="76" width="18" height="6" rx="1.5" fill="rgba(167,139,250,.55)"/>
+            <rect x="30" y="76" width="30" height="6" rx="1.5" fill="rgba(167,139,250,.3)"/>
+            <rect x="68" y="76" width="14" height="6" rx="1.5" fill="rgba(167,139,250,.4)"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="cat c1">Full-Stack · Trading</div>
+          <h3>Stock Trading Simulator &amp; Portfolio Tracker</h3>
+          <p>Practice-trading platform with a Flask REST API and PostgreSQL on AWS, live portfolio updates, and an AWS Lambda job that snapshots balances daily.</p>
+          <div class="stack-tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span></div>
+          <a class="project-link" href="https://github.com/david-aronowitz/FinanceProject" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="art">
+          <div class="art-grid" style="position:absolute; inset:0;"></div>
+          <svg width="150" height="90" viewBox="0 0 150 90" fill="none">
+            <ellipse cx="75" cy="45" rx="60" ry="22" stroke="#A78BFA" stroke-width="1.5" fill="none" opacity="0.7"/>
+            <ellipse cx="75" cy="45" rx="60" ry="22" stroke="#2DD4BF" stroke-width="1.5" fill="none" opacity="0.5" transform="rotate(55 75 45)"/>
+            <ellipse cx="75" cy="45" rx="60" ry="22" stroke="#F0B65C" stroke-width="1.5" fill="none" opacity="0.5" transform="rotate(-55 75 45)"/>
+            <circle cx="75" cy="45" r="7" fill="#EAEDF3"/>
+            <circle cx="18" cy="38" r="2.4" fill="#2DD4BF"/>
+            <circle cx="128" cy="52" r="2.4" fill="#A78BFA"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="cat c3">Research</div>
+          <h3>Quantum Chaos in a Black Hole Potential</h3>
+          <p>Research thesis for the Alpha Program at Hebrew University, simulating a black hole potential model to study chaotic quantum behavior. Presented at the national Young Developers and Scientists competition.</p>
+          <div class="stack-tags"><span>Python</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span></div>
+          <a class="project-link" href="https://github.com/david-aronowitz/Alpha-Quantum-Chaos" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="art">
+          <div class="art-grid" style="position:absolute; inset:0;"></div>
+          <svg width="150" height="90" viewBox="0 0 150 90" fill="none">
+            <rect x="8" y="10" width="134" height="70" rx="6" fill="#0A0E16" stroke="rgba(255,255,255,.08)"/>
+            <text x="18" y="30" font-family="JetBrains Mono, monospace" font-size="9" fill="#A78BFA">MOV R1, #4</text>
+            <text x="18" y="44" font-family="JetBrains Mono, monospace" font-size="9" fill="#2DD4BF">ADD R2, R1</text>
+            <text x="18" y="58" font-family="JetBrains Mono, monospace" font-size="9" fill="#8B94A6">LABEL: JMP L1</text>
+            <text x="18" y="72" font-family="JetBrains Mono, monospace" font-size="9" fill="#F0B65C">0x1F 0xA3 0x00</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="cat c2">Systems Programming</div>
+          <h3>Custom Assembler</h3>
+          <p>A two-pass assembler that parses, validates, and translates custom assembly into executable binary, with careful memory management and symbol-table resolution.</p>
+          <div class="stack-tags"><span>C</span></div>
+          <span style="font-size:13px; color:var(--text-dim); font-style:italic; display:block; margin-top:10px;">No public GitHub link available due to university academic integrity policy.</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -349,117 +436,6 @@
           <span class="tag">Software Testing</span><span class="tag">Networking</span><span class="tag">ML</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="section-pad">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Experience</div>
-      <h2>Where I've worked</h2>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top">
-        <span class="exp-org">FIRST Robotics Competition — Team Excalibur</span>
-        <span class="exp-dates">2022 – 2024</span>
-      </div>
-      <p class="exp-role">Software Team Member · Java, Git</p>
-      <ul class="bullets">
-        <li>Developed code as part of a 12-person software team within a 40-member robotics group spanning software, mechanical, and hardware.</li>
-        <li>Wrote Java to control the robot, implementing motor control and image recognition systems.</li>
-        <li>Took part in Git code reviews, reading teammates' code to catch bugs and keep the codebase stable ahead of competitions.</li>
-        <li>Explained software constraints to the hardware team to keep the code aligned with the physical robot design.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section-pad" style="background:var(--bg-soft);">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Projects</div>
-      <h2>A few things I've built</h2>
-      <p>Selected work spanning full-stack apps, systems programming, and research.</p>
-    </div>
-    <div class="project-grid">
-
-      <div class="project-card">
-        <div class="art">
-          <div class="art-grid" style="position:absolute; inset:0;"></div>
-          <svg width="150" height="90" viewBox="0 0 150 90" fill="none">
-            <polyline points="4,70 24,55 44,60 64,32 84,40 104,16 124,26 146,8" stroke="#2DD4BF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="146" cy="8" r="4" fill="#2DD4BF"/>
-            <rect x="4" y="76" width="18" height="6" rx="1.5" fill="rgba(167,139,250,.55)"/>
-            <rect x="30" y="76" width="30" height="6" rx="1.5" fill="rgba(167,139,250,.3)"/>
-            <rect x="68" y="76" width="14" height="6" rx="1.5" fill="rgba(167,139,250,.4)"/>
-          </svg>
-        </div>
-        <div class="project-body">
-          <div class="cat c1">Full-Stack · Trading</div>
-          <h3>Stock Trading Simulator &amp; Portfolio Tracker</h3>
-          <p>Practice-trading platform with a Flask REST API and PostgreSQL on AWS, live portfolio updates, and an AWS Lambda job that snapshots balances daily.</p>
-          <div class="stack-tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span></div>
-          <a class="project-link" href="https://github.com/david-aronowitz" target="_blank" rel="noopener">View on GitHub →</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="art">
-          <div class="art-grid" style="position:absolute; inset:0;"></div>
-          <svg width="150" height="90" viewBox="0 0 150 90" fill="none">
-            <rect x="8" y="10" width="134" height="70" rx="6" fill="#0A0E16" stroke="rgba(255,255,255,.08)"/>
-            <text x="18" y="30" font-family="JetBrains Mono, monospace" font-size="9" fill="#A78BFA">MOV R1, #4</text>
-            <text x="18" y="44" font-family="JetBrains Mono, monospace" font-size="9" fill="#2DD4BF">ADD R2, R1</text>
-            <text x="18" y="58" font-family="JetBrains Mono, monospace" font-size="9" fill="#8B94A6">LABEL: JMP L1</text>
-            <text x="18" y="72" font-family="JetBrains Mono, monospace" font-size="9" fill="#F0B65C">0x1F 0xA3 0x00</text>
-          </svg>
-        </div>
-        <div class="project-body">
-          <div class="cat c2">Systems Programming</div>
-          <h3>Custom Assembler</h3>
-          <p>A two-pass assembler that parses, validates, and translates custom assembly into executable binary, with careful memory management and symbol-table resolution.</p>
-          <div class="stack-tags"><span>C</span></div>
-          <a class="project-link" href="https://github.com/david-aronowitz" target="_blank" rel="noopener">View on GitHub →</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="art">
-          <div class="art-grid" style="position:absolute; inset:0;"></div>
-          <svg width="150" height="90" viewBox="0 0 150 90" fill="none">
-            <ellipse cx="75" cy="45" rx="60" ry="22" stroke="#A78BFA" stroke-width="1.5" fill="none" opacity="0.7"/>
-            <ellipse cx="75" cy="45" rx="60" ry="22" stroke="#2DD4BF" stroke-width="1.5" fill="none" opacity="0.5" transform="rotate(55 75 45)"/>
-            <ellipse cx="75" cy="45" rx="60" ry="22" stroke="#F0B65C" stroke-width="1.5" fill="none" opacity="0.5" transform="rotate(-55 75 45)"/>
-            <circle cx="75" cy="45" r="7" fill="#EAEDF3"/>
-            <circle cx="18" cy="38" r="2.4" fill="#2DD4BF"/>
-            <circle cx="128" cy="52" r="2.4" fill="#A78BFA"/>
-          </svg>
-        </div>
-        <div class="project-body">
-          <div class="cat c3">Research</div>
-          <h3>Quantum Chaos in a Black Hole Potential</h3>
-          <p>Research thesis for the Alpha Program at Hebrew University, simulating a black hole potential model to study chaotic quantum behavior. Presented at the national Young Developers and Scientists competition.</p>
-          <div class="stack-tags"><span>Python</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="education" class="section-pad">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Education</div>
-      <h2>Academic background</h2>
-    </div>
-    <div class="edu-card">
-      <div>
-        <div class="school">The Open University of Israel</div>
-        <div class="detail">B.Sc. in Computer Science · GPA 92</div>
-      </div>
-      <div class="when">Expected Oct 2027</div>
     </div>
   </div>
 </section>
