@@ -63,7 +63,7 @@
     font-family:'Sora', sans-serif; font-weight:800; font-size:20px;
     letter-spacing:.02em;
   }
-  .nav-links{display:flex; gap:34px; font-size:14.5px;}
+  .nav-links{display:flex; gap:28px; font-size:14.5px;}
   .nav-links a{color:var(--text-soft); transition:color .15s;}
   .nav-links a:hover{color:var(--text);}
   .nav-links a.active{color:var(--teal);}
@@ -166,13 +166,15 @@
   }
   .tag:hover{border-color:var(--teal); color:var(--teal);}
 
-  /* ---------- Experience ---------- */
+  /* ---------- Experience & Extracurricular Cards ---------- */
   .exp-card{
     background:var(--card);
     border:1px solid var(--border);
     border-radius:16px;
     padding:28px 30px;
+    margin-bottom:20px;
   }
+  .exp-card:last-child{margin-bottom:0;}
   .exp-top{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline; margin-bottom:4px;}
   .exp-org{font-family:'Sora', sans-serif; font-weight:700; font-size:18px;}
   .exp-dates{font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--teal);}
@@ -272,6 +274,7 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#extracurriculars">Extracurriculars</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -444,7 +447,62 @@
   </div>
 </section>
 
-<section id="contact" class="section-pad">
+<section id="extracurriculars" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Extracurriculars</div>
+      <h2>Leadership, Programs &amp; Activities</h2>
+    </div>
+    
+    <div class="exp-card">
+      <div class="exp-top">
+        <span class="exp-org">Student Union Council</span>
+      </div>
+      <ul class="bullets">
+        <li>Serving as a council member on the Open University Student Union, uniquely contributing as the sole high school age member.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-top">
+        <span class="exp-org">Johannes Rau International Youth Delegation</span>
+      </div>
+      <ul class="bullets">
+        <li>Selected participant strengthening international relations and cultural diplomacy on behalf of the embassy, including an immersive 2 week long homestay with a host family abroad.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-top">
+        <span class="exp-org">Academic Excellence</span>
+      </div>
+      <ul class="bullets">
+        <li>Completed mathematics acceleration program in 10th grade (98) and English native track in 11th grade (96).</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-top">
+        <span class="exp-org">Conference Speaker</span>
+      </div>
+      <ul class="bullets">
+        <li>Served as a speaker at the President's Residence conference for a shared Israeli future, addressing an audience of 1,000 people about outstanding youth and youth leadership ( [00:24:15] — <a href="https://www.youtube.com/live/Gp_9BWxio_0?si=2dDP1Y906DW2fWuc" target="_blank" rel="noopener">Watch speech on YouTube</a>).</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-top">
+        <span class="exp-org">National Challenges Pilot</span>
+      </div>
+      <ul class="bullets">
+        <li>Co presented a proposal for raising awareness of food waste caused by aesthetic produce defects and outlining potential solutions as part of an initial pilot project for Alpha and Idea graduates, recognized as one of 3 winning teams.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section-pad" style="background:var(--bg-soft);">
   <div class="wrap">
     <div class="contact-card">
       <h2>Let's build something together</h2>
