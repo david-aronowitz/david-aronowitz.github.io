@@ -127,10 +127,6 @@
   /* ---------- Section shell ---------- */
   .section-pad{padding:96px 0;}
   .section-head{margin-bottom:44px; max-width:640px;}
-  .eyebrow{
-    font-size:13px; font-weight:600; letter-spacing:.06em;
-    color:var(--teal); text-transform:uppercase; margin-bottom:10px;
-  }
   .section-head h2{font-size:clamp(28px,3.4vw,36px); margin-bottom:14px;}
   .section-head p{color:var(--text-soft); font-size:16px;}
 
@@ -188,7 +184,6 @@
     background:var(--grad);
   }
   
-  /* Styling inline links in text to make them clearly clickable */
   ul.bullets a {
     color: var(--teal);
     font-weight: 600;
@@ -237,7 +232,6 @@
     padding:4px 9px; background:var(--card-2); border:1px solid var(--border); border-radius:6px; color:var(--text-dim);
   }
   
-  /* Highlight project links clearly */
   .project-link{
     font-size:14px; 
     font-weight:700; 
@@ -251,7 +245,6 @@
   }
   .project-link:hover{color:var(--purple);}
 
-  /* project art (css/svg mini graphics, no fake screenshots) */
   .art-grid{width:100%; height:100%; background-image:linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size:20px 20px;}
   .art svg{position:relative; z-index:1;}
 
@@ -313,7 +306,7 @@
     <p class="hi">Hi, I'm</p>
     <h1>David <span class="grad-text">Aronowitz</span></h1>
     <p class="role">Computer Science Student</p>
-    <p class="stack-line">Python · Java · C · C++ · SQL</p>
+    <p class="stack-line">Python · Java · C</p>
     <div class="btn-row">
       <a href="#projects" class="btn btn-primary">View My Work</a>
       <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -325,7 +318,6 @@
 <section id="about" class="section-pad">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">About</div>
       <h2>A bit about me</h2>
     </div>
     <div class="about-grid">
@@ -333,9 +325,9 @@
         <img src="profile.jpg" alt="David Aronowitz">
       </div>
       <div class="about-text">
-        <p>Hi, I am a Computer Science student at The Open University of Israel (Expected Graduation: November 2027) with a GPA of 92. I combine solid academic foundations with practical experience in full stack development, Python physics modeling, and robotics.</p>
+        <p>Hi, I am a final year Computer Science student at The Open University of Israel with a GPA of 92. I combine solid academic foundations with practical experience in full stack development, Python computational modeling, and robotics.</p>
         <p>I enjoy taking abstract ideas and turning them into working software applications. Whether I am building web platforms or working alongside teammates to write software for a robotics team, I focus on clear communication and effective collaboration.</p>
-        <p>I am looking for opportunities where I can contribute to meaningful projects, collaborate with experienced engineers, and continue to grow technically.</p>
+        <p>I am looking for a Student Software Engineer or Python Developer position where I can contribute to projects, collaborate with experienced engineers, and continue to grow technically.</p>
       </div>
     </div>
   </div>
@@ -344,7 +336,6 @@
 <section id="experience" class="section-pad" style="background:var(--bg-soft);">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Experience</div>
       <h2>Where I've worked &amp; collaborated</h2>
     </div>
     <div class="exp-card">
@@ -352,7 +343,6 @@
         <span class="exp-org">Software Team Member, First Robotics Competition</span>
         <span class="exp-dates">High School</span>
       </div>
-      <p class="exp-role">Software Team Member | Java, Git</p>
       <ul class="bullets">
         <li>Developed Java software while applying OOP principles, managed with Git, to drive and control a competition robot, integrating motor control over a CAN network with a computer vision pipeline, automating target tracking and enabling precise driver control.</li>
         <li>Worked closely within the software team, integrating feedback through weekly code reviews, and collaborated with hardware and mechanical teams to adapt software to system constraints under tight competition deadlines.</li>
@@ -364,7 +354,6 @@
 <section id="projects" class="section-pad">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Projects</div>
       <h2>A few things I've built</h2>
       <p>Selected work spanning full-stack apps, systems programming, and research.</p>
     </div>
@@ -384,8 +373,8 @@
         <div class="project-body">
           <div class="cat c1">Full-Stack · Trading</div>
           <h3>Stock Trading Simulator &amp; Portfolio Tracker</h3>
-          <p>Developed a full stack platform using Python, PostgreSQL and AWS to process simulated stock trades. Designed a user friendly frontend using JavaScript, HTML, CSS and a Flask RESTful API to visualize portfolios with NumPy mathematical analyses. Utilized Docker and AWS Lambda for daily balance logging.</p>
-          <div class="stack-tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>NumPy</span></div>
+          <p>Practice-trading platform with a Flask REST API and PostgreSQL on AWS, live portfolio updates, and an AWS Lambda job that snapshots balances daily.</p>
+          <div class="stack-tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span></div>
           <a class="project-link" href="https://github.com/david-aronowitz/FinanceProject" target="_blank" rel="noopener">View on GitHub ↗</a>
         </div>
       </div>
@@ -404,9 +393,9 @@
         </div>
         <div class="project-body">
           <div class="cat c3">Research</div>
-          <h3>Quantum Chaos Research</h3>
-          <p>Used Python, NumPy, SciPy and FFT to numerically solve the Schrödinger equation and simulate the time evolution of a system modeling a black hole. Presented findings at the national Young Developers and Scientists competition.</p>
-          <div class="stack-tags"><span>Python</span><span>NumPy</span><span>SciPy</span><span>FFT</span><span>Matplotlib</span></div>
+          <h3>Quantum Chaos in a Black Hole Potential</h3>
+          <p>Research thesis for the Alpha Program at Hebrew University, simulating a black hole potential model to study chaotic quantum behavior. Presented at the national Young Developers and Scientists competition.</p>
+          <div class="stack-tags"><span>Python</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span></div>
           <a class="project-link" href="https://github.com/david-aronowitz/Alpha-Quantum-Chaos" target="_blank" rel="noopener">View on GitHub ↗</a>
         </div>
       </div>
@@ -438,15 +427,13 @@
 <section id="alpha" class="section-pad">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Academic Research</div>
-      <h2>Quantum Chaos Research — Alpha Program</h2>
+      <h2>Academic Research</h2>
     </div>
     <div class="exp-card">
       <div class="exp-top">
         <span class="exp-org">The Hebrew University of Jerusalem</span>
         <span class="exp-dates">Selective National Program</span>
       </div>
-      <p class="exp-role">Research Thesis on Quantum Chaos | <a href="https://github.com/david-aronowitz/Alpha-Quantum-Chaos" target="_blank" rel="noopener" class="project-link">View Project Link ↗</a></p>
       <ul class="bullets">
         <li>Used Python, NumPy, SciPy and FFT to numerically solve the Schrödinger equation and simulate the time evolution of a system modeling a black hole, investigating unmapped chaotic behaviors in quantum systems.</li>
         <li>Analyzed simulation data against theoretical models with Matplotlib, actively integrated expert feedback throughout the process, and presented the findings at the national Young Developers and Scientists competition.</li>
@@ -458,7 +445,6 @@
 <section id="skills" class="section-pad" style="background:var(--bg-soft);">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Skills</div>
       <h2>What I work with</h2>
     </div>
     <div class="skill-groups">
@@ -473,23 +459,28 @@
       <div class="skill-group">
         <h3>Libraries &amp; Tools</h3>
         <div class="tags">
-          <span class="tag">RESTful APIs</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span>
-          <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Flask</span>
-          <span class="tag">Matplotlib</span><span class="tag">AI/LLM tools</span><span class="tag">NumPy</span>
+          <span class="tag">RESTful APIs</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span>
+          <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Git</span>
+          <span class="tag">Flask</span><span class="tag">Matplotlib</span><span class="tag">NumPy</span>
+          <span class="tag">Pandas</span><span class="tag">Linux</span><span class="tag">AI/LLM tools</span>
         </div>
       </div>
       <div class="skill-group">
         <h3>Concepts</h3>
         <div class="tags">
-          <span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">Object Oriented Programming (OOP)</span>
-          <span class="tag">System Design</span>
+          <span class="tag">Data Structures</span><span class="tag">Algorithms</span>
+          <span class="tag">Object Oriented Programming (OOP)</span><span class="tag">System Design</span>
+          <span class="tag">Software Testing</span><span class="tag">Networking (TCP/IP)</span>
+          <span class="tag">Operating Systems</span>
         </div>
       </div>
       <div class="skill-group">
         <h3>Soft Skills</h3>
         <div class="tags">
-          <span class="tag">Team player</span><span class="tag">Works well under pressure</span>
-          <span class="tag">Meets deadlines</span><span class="tag">Able to take feedback</span>
+          <span class="tag">Team player</span><span class="tag">Detail-oriented</span>
+          <span class="tag">Self-learner</span><span class="tag">Problem solver</span>
+          <span class="tag">Works well under pressure</span><span class="tag">Meets deadlines</span>
+          <span class="tag">Able to take feedback</span>
         </div>
       </div>
     </div>
@@ -499,7 +490,6 @@
 <section id="extracurriculars" class="section-pad">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Extracurriculars</div>
       <h2>Leadership, Programs &amp; Activities</h2>
     </div>
 
@@ -508,7 +498,7 @@
         <span class="exp-org">Conference Speaker</span>
       </div>
       <ul class="bullets">
-        <li>Served as a speaker at the President's Residence conference for a shared Israeli future, addressing an audience of 1,000 people about outstanding youth and youth leadership (<a href="https://www.youtube.com/live/Gp_9BWxio_0?si=2dDP1Y906DW2fWuc" target="_blank" rel="noopener"> Watch speech on YouTube [00:24:15] ↗</a>).</li>
+        <li>Served as a speaker at the President's Residence conference for a shared Israeli future, addressing an audience of 1,000 people about outstanding youth and youth leadership (<a href="https://www.youtube.com/live/Gp_9BWxio_0?si=2dDP1Y906DW2fWuc" target="_blank" rel="noopener">Watch speech on YouTube [00:24:15] ↗</a>).</li>
       </ul>
     </div>
     
@@ -557,8 +547,8 @@
       <h2>Let's build something together</h2>
       <p>Open to software and systems roles — reach out any time.</p>
       <div class="contact-links">
-        <a href="mailto:DavidAronowitz.Work@gmail.com">Gmail: DavidAronowitz.Work@gmail.com ↗</a>
-        <a href="tel:+972587659482">Phone: 058-765-9482 ↗</a>
+        <a href="mailto:DavidAronowitz.Work@gmail.com">DavidAronowitz.Work@gmail.com ↗</a>
+        <a href="tel:+972587659482">058-765-9482 ↗</a>
         <a href="https://github.com/david-aronowitz" target="_blank" rel="noopener">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/david-aronowitz-5a1412252/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
